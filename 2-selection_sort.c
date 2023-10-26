@@ -4,8 +4,8 @@
  * selection_sort - sorts an array of integers in ascending
  *  order using the Selection sort algorithm
  *
- * @array: data to sort
- * @size: size of data
+ * @p_array: data to sort
+ * @s: size of data
  *
  * Return: No Return
  */
