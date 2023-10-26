@@ -4,7 +4,7 @@
 /**
  * _swap - swaps two values in an array
  *
- * @array: data to sort
+ * @p_array: data to sort
  * @m: first value
  * @n: second value
  * @s: size of data
@@ -27,18 +27,18 @@ void _swap(int *p_array, int m, int n, int s)
 /**
  * partition - sorts a partition of data in relation to a pivot
  *
- * @array: data to sort
- * @m: Left wall
- * @p_max: right wall
+ * @p_array: data to sort
+ * @mn: Left wall
+ * @mx: right wall
  * @s: size of data
  *
  * Return: New Pivot
  */
-int partition(int *p_array, int m, int p_max, size_t s)
+int partition(int *p_array, int mn, int mx, size_t s)
 {
-	int i = m, j, pivot  = p_array[p_max];
+	int i = mn, j, pivot  = p_array[mx];
 
-	for (j = m; j <= p_max; j++)
+	for (j = mn; j <= mx; j++)
 	{
 		if (p_array[j] < pivot)
 		{
@@ -47,7 +47,7 @@ int partition(int *p_array, int m, int p_max, size_t s)
 		}
 
 	}
-	_swap(p_array, i, p_max, s);
+	_swap(p_array, i, mx, s);
 
 	return (i);
 }
