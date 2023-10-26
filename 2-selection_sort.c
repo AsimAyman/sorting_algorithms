@@ -12,7 +12,7 @@
 void selection_sort(int *p_array, size_t s)
 {
 	size_t m, n, p;
-	int m, s = 0;
+	int m, swap = 0;
 
 	if (s < 2)
 		return;
@@ -28,13 +28,13 @@ void selection_sort(int *p_array, size_t s)
 			{
 				m = p_array[n];
 				p = n;
-				s = 1;
+				swap = 1;
 			}
 
 		}
 		p_array[p] = p_array[m];
 		p_array[m] = m;
-		if (s)
-			print_array(p_array, s), s = 0;
+		if (swap)
+			print_array(p_array, s), swap = 0;
 	}
 }
