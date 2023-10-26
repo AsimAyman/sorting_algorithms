@@ -21,8 +21,8 @@ void _swap(int *p_array, int p_i, int p_j)
 
 /**
  * shell_sort - sort the list and print the changes
- * @array: The array to sort.
- * @size: Size of the array
+ * @p_array: The array to sort.
+ * @p_size: Size of the array
  * Return: Nothing
  */
 void shell_sort(int *p_array, size_t p_size)
