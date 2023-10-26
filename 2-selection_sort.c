@@ -11,18 +11,18 @@
  */
 void selection_sort(int *p_array, size_t s)
 {
-	size_t m, n, p;
+	size_t i, n, p;
 	int m, swap = 0;
 
 	if (s < 2)
 		return;
 
-	for (m = 0; m < s; m++)
+	for (i = 0; i < s; i++)
 	{
-		m = p_array[m];
-		p = m;
+		m = p_array[i];
+		p = i;
 
-		for (n = m + 1; n < s; n++)
+		for (n = i + 1; n < s; n++)
 		{
 			if (p_array[n] < m)
 			{
@@ -32,8 +32,8 @@ void selection_sort(int *p_array, size_t s)
 			}
 
 		}
-		p_array[p] = p_array[m];
-		p_array[m] = m;
+		p_array[p] = p_array[i];
+		p_array[i] = m;
 		if (swap)
 			print_array(p_array, s), swap = 0;
 	}
