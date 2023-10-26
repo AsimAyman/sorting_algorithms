@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * _bigest -  Give me the largest number in a array of integers
- * @array: The Int array
- * @size: Size of array
+ * @p_array: The Int array
+ * @s: Size of array
  * Return: The largest number
  */
 int _bigest(int *p_array, size_t s)
@@ -21,7 +21,7 @@ int _bigest(int *p_array, size_t s)
 }
 /**
  * _memset -  Create a integer array and set each space in 0
- * @size: Size of array
+ * @s: Size of array
  * Return: The integer array
  */
 int *_memset(int s)
